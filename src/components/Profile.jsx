@@ -1,9 +1,9 @@
 
 function Profile() {
     return (
-        <div className="profile_div">
+        <div className="profile">
             <p> Cześć!</p>
         </div>
-    )
+    );
 }
  export default Profile
