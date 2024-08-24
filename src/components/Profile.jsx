@@ -1,16 +1,17 @@
-import userData from "./userData.json"
+import styles from "./Profile.module.css";
+
+import userData from "./userData.json";
 
 function Profile() {
     return (
-        <div>
-            <div>
-                <img
-                src="<https://cdn-icons-png.flaticon.com/512/1077/1077012.png>"
-                alt="User avatar"
+        <div className={styles.profile}>
+            <div className={styles.contents}>
+                <img className={styles.avatar}
+                    src={"https://cdn-icons-png.flaticon.com/512/2922/2922506.png"} alt="User avatar"
                 />
-                <p>{userData.username}</p>
-                <p>@{userData.tag}</p>
-                <p>{userData.location}</p>
+                <p className={styles.username}>{userData.username}</p>
+                <p className={styles.tag}>@{userData.tag}</p>
+                <p className={styles.localization}>{userData.location}</p>
             </div>
 
             <ul>
