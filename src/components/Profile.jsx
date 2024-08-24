@@ -14,18 +14,18 @@ function Profile() {
                 <p className={styles.localization}>{userData.location}</p>
             </div>
 
-            <ul>
-                <li>
+            <ul className={styles.list}>
+                <li className={styles.li}>
                     <span>Followers</span>
-                    <span>{userData.stats.followers}</span>
+                    <span className={styles.stats}>{userData.stats.followers}</span>
                 </li>
-                <li>
+                <li className={styles.li}>
                     <span>Views</span>
-                    <span>{userData.stats.views}</span>
+                    <span className={styles.stats}>{userData.stats.views}</span>
                 </li>
-                <li>
+                <li className={styles.li}>
                     <span>Likes</span>
-                    <span>{userData.stats.likes}</span>
+                    <span className={styles.stats}>{userData.stats.likes}</span>
                 </li>
             </ul>
         </div>
