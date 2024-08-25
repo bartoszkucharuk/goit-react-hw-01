@@ -8,16 +8,17 @@ import transactions from "./components/TransactionHistory/transactions.json";
 
 function App() {
   return (
-    <div>
+    <>
       <Profile
         name={user.username}
         tag={user.tag}
         location={user.location}
         image={user.avatar}
-        stats={user.stats}/>
+        stats={user.stats}
+      />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </div>
+    </>
     )
 }
 export default App
