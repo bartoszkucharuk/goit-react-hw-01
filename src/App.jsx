@@ -1,17 +1,16 @@
-
+import React from "react";
 import Profile from './components/Profile.jsx';
-import userData from "./components/userData.json";
+import user from "./components/userData.json";
 
 function App() {
   return (
     <>
-      
       <Profile
-        name={userData.username}
-        tag={userData.tag}
-        location={userData.location}
-        image={userData.avatar}
-        stats={userData.stats}
+        name={user.username}
+        tag={user.tag}
+        location={user.location}
+        image={user.avatar}
+        stats={user.stats}
       />
 
     </>

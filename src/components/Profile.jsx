@@ -1,31 +1,30 @@
+import React from "react";
 import styles from "./Profile.module.css";
 
-import userData from "./userData.json";
 
-function Profile() {
+function Profile ({ name, tag, location, image, stats }) {
     return (
         <div className={styles.profile}>
             <div className={styles.contents}>
-                <img className={styles.avatar}
-                    src={"https://cdn-icons-png.flaticon.com/512/2922/2922506.png"} alt="User avatar"
+                <img className={styles.avatar} src={image} alt="User avatar"
                 />
-                <p className={styles.username}>{userData.username}</p>
-                <p className={styles.tag}>@{userData.tag}</p>
-                <p className={styles.localization}>{userData.location}</p>
+                <p className={styles.username}>{name}</p>
+                <p className={styles.tag}>@{tag}</p>
+                <p className={styles.localization}>{location}</p>
             </div>
 
             <ul className={styles.list}>
                 <li className={styles.li}>
                     <span>Followers</span>
-                    <span className={styles.stats}>{userData.stats.followers}</span>
+                    <span className={styles.stats}>{stats.followers}</span>
                 </li>
                 <li className={styles.li}>
                     <span>Views</span>
-                    <span className={styles.stats}>{userData.stats.views}</span>
+                    <span className={styles.stats}>{stats.views}</span>
                 </li>
                 <li className={styles.li}>
                     <span>Likes</span>
-                    <span className={styles.stats}>{userData.stats.likes}</span>
+                    <span className={styles.stats}>{stats.likes}</span>
                 </li>
             </ul>
         </div>
