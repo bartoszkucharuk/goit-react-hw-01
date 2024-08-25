@@ -1,0 +1,38 @@
+table {
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+    text-transform: capitalize;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+thead {
+    background-color: rgba(0, 0, 0, 0.829);
+    color: lightgrey;
+    height: 40px;
+}
+
+table tr {
+    height: 40px;
+}
+
+table tr:nth-child(even){
+    background-color: lightgrey;
+}
+
+table td,
+table th {
+    border: 1px solid black;
+    width: 250px;
+}
+
+table td {
+    text-align: center;
+}
+
+.type {
+    text-align: left; 
+    text-indent:80px; 
+}
