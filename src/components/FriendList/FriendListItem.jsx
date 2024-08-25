@@ -4,10 +4,11 @@ import styles from "./FriendListItem.module.css";
 function FriendListItem({ avatar, name, isOnline }) {
 
     return (
-        <li>
-            <img src={avatar} alt={`${name}'s avatar`} width="48" />
-            <p>{name}</p>
-            <p>{isOnline ? "Online" : "Offline"}</p>
+        <li className={styles.item}>
+            <img className={styles.avatar} src={avatar} alt={`${name}'s avatar`} width="48" />
+            <p className={styles.name}>{name}</p>
+            <p className={styles.status} style={{color: isOnline ? "green" : "red" }}>
+                {isOnline ? "Online" : "Offline"}</p>
         </li>
     );
 
