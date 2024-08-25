@@ -1,10 +1,12 @@
 import React from "react";
-import Profile from './components/Profile.jsx';
-import user from "./components/userData.json";
+import Profile from './components/Profile/Profile.jsx';
+import user from "./components/Profile/userData.json";
+import FriendList from './components/FriendList/FriendList.jsx'
+import friends from "./components/FriendList/friends.json";
 
 function App() {
   return (
-    <>
+    <div>
       <Profile
         name={user.username}
         tag={user.tag}
@@ -13,7 +15,9 @@ function App() {
         stats={user.stats}
       />
 
-    </>
+      <FriendList friends={friends} />
+
+    </div>
     )
 }
 export default App
