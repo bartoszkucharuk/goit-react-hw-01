@@ -25,7 +25,7 @@ table tr:nth-child(even){
 table td,
 table th {
     border: 1px solid black;
-    width: 250px;
+    width: 260px;
 }
 
 table td {
